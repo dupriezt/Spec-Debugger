@@ -1,0 +1,4 @@
+specs
+handlesContext: aContext
+
+	^ true
