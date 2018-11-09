@@ -17,4 +17,6 @@ specOptimized
 				addSplitter;
 				add: #contextInspector]
 		top: 0.8;
+		addHSplitter;
+		add: #inspectSpecDebuggerButton origin: 0.6@0.5 corner: 0.9@0.6;
 		yourself 

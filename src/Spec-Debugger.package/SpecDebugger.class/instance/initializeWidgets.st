@@ -5,6 +5,9 @@ initializeWidgets
 	code := self newCode.
 	receiverInspector := self instantiate: InspectorNavigator.
 	contextInspector := self instantiate: EyeDebuggerContextInspector.
+	inspectSpecDebuggerButton := self newButton.
+	inspectSpecDebuggerButton label: 'InspectSpecDebugger'.
+	inspectSpecDebuggerButton action: [ self inspect ].
 	self code
 		acceptBlock:
 			[ :text :notifyer | self recompileMethodTo: text string inContext: self stack selectedItem notifying: notifyer ].

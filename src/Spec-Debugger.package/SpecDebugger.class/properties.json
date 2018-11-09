@@ -18,7 +18,8 @@
 		"toolbar",
 		"contextInspector",
 		"receiverInspector",
-		"browsedEnvironment"
+		"browsedEnvironment",
+		"inspectSpecDebuggerButton"
 	],
 	"name" : "SpecDebugger",
 	"type" : "normal"
