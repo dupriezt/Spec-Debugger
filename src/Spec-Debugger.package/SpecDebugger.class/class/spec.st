@@ -1,7 +1,6 @@
 specs
 spec
 	<spec>
-	
 	^ SpecLayout composed
 		newColumn: [ :column | 
 			column
@@ -13,4 +12,5 @@ spec
 				newRow: [ :row | 
 					row
 						add: #receiverInspector;
-						add: #contextInspector ] ]
+						add: #contextInspector ].
+		]
