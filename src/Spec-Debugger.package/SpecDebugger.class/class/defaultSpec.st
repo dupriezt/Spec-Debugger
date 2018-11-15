@@ -1,6 +1,5 @@
 specs
-specOptimized
-	<spec: #default>
+defaultSpec
 	| toolbarHeight |
 	
 	toolbarHeight := self toolbarHeight.
