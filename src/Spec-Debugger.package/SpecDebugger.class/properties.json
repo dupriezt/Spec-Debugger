@@ -19,7 +19,8 @@
 		"contextInspector",
 		"receiverInspector",
 		"browsedEnvironment",
-		"inspectSpecDebuggerButton"
+		"inspectSpecDebuggerButton",
+		"scriptingPane"
 	],
 	"name" : "SpecDebugger",
 	"type" : "normal"

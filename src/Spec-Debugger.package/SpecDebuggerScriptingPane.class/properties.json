@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "Spec-Debugger",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"executeButton",
+		"scriptingBox",
+		"specDebugger",
+		"specDebuggerWrapper"
+	],
+	"name" : "SpecDebuggerScriptingPane",
+	"type" : "normal"
+}

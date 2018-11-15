@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "ButtonPresenter",
+	"super" : "Object",
 	"category" : "Spec-Debugger",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -8,6 +8,6 @@
 	"instvars" : [
 		"specDebugger"
 	],
-	"name" : "InspectSpecDebuggerButton",
+	"name" : "SpecDebuggerWrapper",
 	"type" : "normal"
 }

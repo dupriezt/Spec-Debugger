@@ -18,4 +18,5 @@ defaultSpec
 		top: 0.8;
 		addHSplitter;
 		add: #inspectSpecDebuggerButton origin: 0.6@0.5 corner: 0.9@0.6;
+		add: #scriptingPane origin: 0.6@0.6 corner: 0.95@0.7;
 		yourself 
