@@ -1,5 +1,4 @@
 specs
-spec
-	<spec: #default>
+defaultSpec
 		^ SpecLayout composed
 			yourself
