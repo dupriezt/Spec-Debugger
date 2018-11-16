@@ -10,7 +10,7 @@ initializeWidgets
 	scriptingBox beForCode.
 	scriptingBox autoAccept: true.
 	scriptingBox acceptBlock: [ :txt | ].
-	scriptingBox text: '[ :dbg | dbg stepOver ]'.
+	scriptingBox text: 'dbg stepOver'.
 	executeButton
 		icon: (self iconNamed: #glamorousGo);
 		action: [
