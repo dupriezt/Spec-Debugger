@@ -1,0 +1,3 @@
+updating
+updateContentFromSession
+	self updateContentFromSession: sessionHolder value
