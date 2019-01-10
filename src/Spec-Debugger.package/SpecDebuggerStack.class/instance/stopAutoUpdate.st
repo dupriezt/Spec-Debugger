@@ -1,0 +1,3 @@
+initialization
+stopAutoUpdate
+	sessionHolder announcer unsubscribe: sessionHolder

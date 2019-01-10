@@ -3,5 +3,4 @@ initializePresenter
 
 	super initializePresenter.
 
-	sessionHolder whenChangedDo: [ :aSession |
-		self updateContentFromSession: aSession ] 
+	self startAutoUpdate 
