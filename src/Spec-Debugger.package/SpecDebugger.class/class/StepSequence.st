@@ -1,0 +1,3 @@
+class initialization
+StepSequence
+	^ StepSequence

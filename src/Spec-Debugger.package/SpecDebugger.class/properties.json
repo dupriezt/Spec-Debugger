@@ -8,7 +8,8 @@
 		"AlwaysOpenFullDebugger",
 		"ErrorRecursion",
 		"FilterCommonMessageSends",
-		"LogDebuggerStackToFile"
+		"LogDebuggerStackToFile",
+		"StepSequence"
 	],
 	"instvars" : [
 		"sessionHolder",
@@ -20,7 +21,8 @@
 		"receiverInspector",
 		"browsedEnvironment",
 		"inspectSpecDebuggerButton",
-		"scriptingPane"
+		"scriptingPane",
+		"recordSteps"
 	],
 	"name" : "SpecDebugger",
 	"type" : "normal"

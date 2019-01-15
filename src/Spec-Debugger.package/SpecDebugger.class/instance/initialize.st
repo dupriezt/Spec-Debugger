@@ -15,4 +15,6 @@ initialize
 		self updateStackFromSession: newSession ].
 	
 	labelHolder whenChangedDo: [ 
-		self updateTitle ]
+		self updateTitle ].
+	
+	recordSteps := false.
