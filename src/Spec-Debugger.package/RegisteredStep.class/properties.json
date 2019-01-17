@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "ThomasDupriez 1/17/2019 14:06",
+	"super" : "Object",
+	"category" : "Spec-Debugger-DebugSession",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stepCommand",
+		"sourceAstNode"
+	],
+	"name" : "RegisteredStep",
+	"type" : "normal"
+}

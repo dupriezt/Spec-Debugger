@@ -1,4 +1,4 @@
 accessing
 sessionClass
 
-	^ DebugSession 
+	^ DebugSessionPlus
