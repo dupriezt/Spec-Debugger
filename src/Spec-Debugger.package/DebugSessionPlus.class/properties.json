@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "ThomasDupriez 1/17/2019 14:13",
+	"super" : "DebugSession",
+	"category" : "Spec-Debugger-DebugSession",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"StepRecords"
+	],
+	"instvars" : [
+		"stepRecord",
+		"wrappedDebugSession"
+	],
+	"name" : "DebugSessionPlus",
+	"type" : "normal"
+}

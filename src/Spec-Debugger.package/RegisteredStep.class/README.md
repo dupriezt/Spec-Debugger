@@ -1,0 +1,2 @@
+stepCommand: symbol
+sourceAstNode: RBProgramNode
