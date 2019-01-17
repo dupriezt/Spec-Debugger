@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "ThomasDupriez 1/17/2019 14:13",
+	"commentStamp" : "ThomasDupriez 1/17/2019 18:35",
 	"super" : "DebugSession",
 	"category" : "Spec-Debugger-DebugSession",
 	"classinstvars" : [ ],
@@ -8,8 +8,7 @@
 		"StepRecords"
 	],
 	"instvars" : [
-		"stepRecord",
-		"wrappedDebugSession"
+		"stepRecord"
 	],
 	"name" : "DebugSessionPlus",
 	"type" : "normal"
