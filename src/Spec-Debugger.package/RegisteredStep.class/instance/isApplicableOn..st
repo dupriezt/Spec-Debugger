@@ -1,3 +1,3 @@
 accessing
 isApplicableOn: anASTNode
-	^ sourceAstNode = anASTNode 
+	^ sourceAstNode == anASTNode 

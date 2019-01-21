@@ -1,4 +1,5 @@
 testing
-isApplicableOn: anASTNode
+isApplicableOn: aContext
 	registeredStepsList isEmpty ifTrue: [ ^false ].
-	^ registeredStepsList first isApplicableOn: anASTNode.
+	aContext sender method ast = senderMethodAST ifFalse: [ ^false ].
+	^ registeredStepsList first isApplicableOn: aContext sourceNodeExecuted.
