@@ -1,12 +1,13 @@
 {
-	"commentStamp" : "ThomasDupriez 1/17/2019 14:06",
+	"commentStamp" : "ThomasDupriez 1/21/2019 11:36",
 	"super" : "Object",
 	"category" : "Spec-Debugger-DebugSession",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"registeredStepsList"
+		"registeredStepsList",
+		"senderMethodAST"
 	],
 	"name" : "StepRecord",
 	"type" : "normal"
