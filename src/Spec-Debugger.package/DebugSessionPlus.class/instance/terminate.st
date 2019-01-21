@@ -1,4 +1,4 @@
 debugging actions
 terminate
-	self class StepRecords add: self stepRecord.
+	self stepRecord isEmpty ifFalse: [self class StepRecords add: self stepRecord].
 	^ super terminate.
