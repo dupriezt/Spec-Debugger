@@ -1,4 +1,3 @@
 api
 whenSelectedItemChanged: aBlock
-
-	self list whenSelectedItemChanged: aBlock
+	self list whenSelectedItemChangedDo: aBlock
