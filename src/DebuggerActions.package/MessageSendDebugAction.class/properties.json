@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "DebugAction",
+	"category" : "DebuggerActions-Actions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"selector",
+		"help"
+	],
+	"name" : "MessageSendDebugAction",
+	"type" : "normal"
+}

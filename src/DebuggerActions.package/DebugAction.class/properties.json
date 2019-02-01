@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "DebuggerActions-Actions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"label",
+		"order",
+		"icon",
+		"keymap",
+		"category",
+		"debugger",
+		"needsValidation",
+		"needsUpdate",
+		"needsSeparatorAfter",
+		"actionSelector"
+	],
+	"name" : "DebugAction",
+	"type" : "normal"
+}
