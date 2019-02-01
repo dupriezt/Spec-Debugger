@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "ResumeDebugAction",
+	"category" : "DebuggerActions-Actions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"preDebugWindow"
+	],
+	"name" : "PreDebugResumeDebugAction",
+	"type" : "normal"
+}

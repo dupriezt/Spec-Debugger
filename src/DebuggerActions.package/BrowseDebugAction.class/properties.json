@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MessageSendDebugAction",
+	"category" : "DebuggerActions-Actions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BrowseDebugAction",
+	"type" : "normal"
+}
