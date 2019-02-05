@@ -8,6 +8,6 @@ baseline: spec
 			
 			"Packages"
 			spec
-				package: 'Spec-Debugger' with: [ spec requires: #('Spec') ];
+				package: 'Spec-Debugger'" with: [ spec requires: #('Spec') ]";
 				package: 'DebuggerActions'.
 		 ]
