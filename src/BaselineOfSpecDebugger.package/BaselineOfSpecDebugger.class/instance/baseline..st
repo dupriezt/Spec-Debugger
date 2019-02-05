@@ -4,7 +4,7 @@ baseline: spec
 	spec
 		for: #common
 		do: [ "Dependencies"
-			self spec: spec.	
+			"self spec: spec."	
 			
 			"Packages"
 			spec
