@@ -1,3 +1,4 @@
 api
 setSelectedItem: anItem
-	self list selectedItem: anItem
+
+	self list setSelectedItem: anItem
