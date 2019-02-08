@@ -1,6 +1,6 @@
 # Spec-Debugger
 
-Metacello new
+```Metacello new
     baseline: 'SpecDebugger';
     repository: 'github://dupriezt/Spec-Debugger';
     load.
