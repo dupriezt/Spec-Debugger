@@ -1,1 +1,1 @@
-I am a button encapsulating a debug action. All my settings are set based on the corresponding debug action.
+I am a button encapsulating a debug action (a subclass of DebugAction). All my settings are set based on the corresponding debug action.
