@@ -5,11 +5,20 @@ executeAction
 	2) Copies this OpalCompiler (to keep its coniguration)
 	3) Send #evaluate to this copy (in a forked process so as not to interfere with the process of the current debugger)
 	4) Close the current debugger"
-	| opalCompiler opalCompilerCopy |
-	opalCompiler := (self session interruptedContext findContextSuchThat: [ :ctxt | ctxt method == (OpalCompiler >> #evaluate) ]).
-	opalCompiler ifNil: [ 
-		self error: 'Restart Execution could not find OpalCompiler>>evaluate context on the stack'.
-		^ nil].
-	opalCompilerCopy := opalCompiler receiver copy.
+	| opalCompilerContext opalCompilerCopy defaultExecEnvironmentContext |
+	opalCompilerContext := (self session interruptedContext findContextSuchThat: [ :ctxt | ctxt method == (OpalCompiler >> #evaluate) ]).
+	opalCompilerContext ifNil: [
+		"Could not find OpalCompiler>>evaluate context on the stack"
+		"Maybe it is because the execution is from a test and not a DoIt"
+		defaultExecEnvironmentContext :=  (self session interruptedContext findContextSuchThat: [ :ctxt | ctxt method == (DefaultExecutionEnvironment  >> #runTestCase:) ]).
+		defaultExecEnvironmentContext ifNil: [ 
+			self error: 'Restart Execution could not find OpalCompiler>>evaluate context (DoIt) or DefaultExecutionEnvironment>>runTestCase: context (test) on the stack'.
+			^ nil
+		].
+		[ defaultExecEnvironmentContext receiver runTestCase: (defaultExecEnvironmentContext tempNamed: #aTestCase copy)] fork.
+		self debugger close.
+		^ nil.
+	].
+	opalCompilerCopy := opalCompilerContext receiver copy.
 	[ opalCompilerCopy evaluate] fork.
 	self debugger close.
