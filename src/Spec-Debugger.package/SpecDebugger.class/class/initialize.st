@@ -7,6 +7,6 @@ initialize
 	(Smalltalk tools respondsTo: #registerDebugger:withRank:) ifFalse: [ ^ self ].
 
 	"Add ourselves to registry. See [Smalltalk tools]" 
-	Smalltalk tools registerDebugger: self withRank: 2.
+	Smalltalk tools registerDebugger: self withRank: 80.
 	
 	StepSequence := LinkedList new.
