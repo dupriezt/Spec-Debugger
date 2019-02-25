@@ -9,7 +9,8 @@
 		"executeButton",
 		"scriptingBox",
 		"specDebugger",
-		"specDebuggerWrapper"
+		"specDebuggerWrapper",
+		"loadButton"
 	],
 	"name" : "SpecDebuggerScriptingPane",
 	"type" : "normal"

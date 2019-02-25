@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DebugAction",
+	"category" : "DebuggerActions-Actions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "StopRecordingDebugAction",
+	"type" : "normal"
+}

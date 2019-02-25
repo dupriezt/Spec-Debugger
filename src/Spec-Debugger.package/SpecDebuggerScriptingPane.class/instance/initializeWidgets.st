@@ -2,7 +2,8 @@ initialization
 initializeWidgets
 
 	scriptingBox := TextPresenter new.
-	executeButton := self newButton.
+	self initializeButtons.
+	
 	specDebuggerWrapper := SpecDebuggerWrapper new.
 	"specDebuggerWrapper gets the specDebugger through SpecDebuggerScriptingPane>>specDebugger:"
 	
@@ -11,8 +12,5 @@ initializeWidgets
 	scriptingBox autoAccept: true.
 	scriptingBox acceptBlock: [ :txt | ].
 	scriptingBox text: 'dbg stepOver'.
-	executeButton
-		icon: (self iconNamed: #glamorousGo);
-		action: [
-			self executeScriptingBoxContent: (self scriptingBox getText asString)
-		].
+	
+	

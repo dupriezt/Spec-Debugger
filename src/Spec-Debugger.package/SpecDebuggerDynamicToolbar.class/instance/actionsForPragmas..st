@@ -1,5 +1,5 @@
 actions lookup
 actionsForPragmas: aSymbolsCollection
-
-	^ (self session class debuggingActionsForPragmas: aSymbolsCollection for: self debugger)
-				
+	^ self session class
+		debuggingActionsForPragmas: aSymbolsCollection
+		for: self debugger

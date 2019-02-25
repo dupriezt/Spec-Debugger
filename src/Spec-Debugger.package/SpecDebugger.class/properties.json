@@ -2,7 +2,10 @@
 	"commentStamp" : "<historical>",
 	"super" : "ComposablePresenter",
 	"category" : "Spec-Debugger",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"showScriptingPane",
+		"showAdvancedDebuggingToolbar"
+	],
 	"pools" : [ ],
 	"classvars" : [
 		"AlwaysOpenFullDebugger",
@@ -20,9 +23,11 @@
 		"contextInspector",
 		"receiverInspector",
 		"browsedEnvironment",
-		"inspectSpecDebuggerButton",
 		"scriptingPane",
-		"recordSteps"
+		"recordSteps",
+		"showScriptingPane",
+		"showAdvancedToolbar",
+		"advancedToolbar"
 	],
 	"name" : "SpecDebugger",
 	"type" : "normal"

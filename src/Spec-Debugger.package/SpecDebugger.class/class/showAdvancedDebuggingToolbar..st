@@ -1,0 +1,3 @@
+accessing
+showAdvancedDebuggingToolbar: anObject
+	showAdvancedDebuggingToolbar := anObject

@@ -1,4 +1,4 @@
 registration
 actionType
-	<debuggingAction>
+	<advancedDebuggingAction>
 	<contextMenuDebuggingAction>
