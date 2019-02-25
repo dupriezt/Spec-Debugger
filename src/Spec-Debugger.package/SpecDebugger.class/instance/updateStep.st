@@ -1,5 +1,3 @@
 updating actions
 updateStep
-
-	self updateStackFromSession: self session.
-	
+	self updateStackFromSession: self session

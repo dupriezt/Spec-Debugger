@@ -1,3 +1,3 @@
 updating widgets
 updateCodeFromContext
-self updateCodeFromContext:self currentContext
+	self updateCodeFromContext: self currentContext.

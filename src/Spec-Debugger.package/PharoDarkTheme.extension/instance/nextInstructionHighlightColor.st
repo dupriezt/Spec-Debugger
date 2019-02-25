@@ -1,0 +1,3 @@
+*Spec-Debugger
+nextInstructionHighlightColor
+	^super nextInstructionHighlightColor muchDarker
