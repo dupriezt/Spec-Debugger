@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"sessionHolder"
+		"sessionHolder",
+		"debuggingActionsPragmas"
 	],
 	"name" : "SpecDebuggerDynamicToolbar",
 	"type" : "normal"

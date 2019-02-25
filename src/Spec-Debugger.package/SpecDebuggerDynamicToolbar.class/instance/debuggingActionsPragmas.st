@@ -1,4 +1,4 @@
 actions lookup
 debuggingActionsPragmas
-
-	^ { #debuggingAction }
+	^ debuggingActionsPragmas
+		ifNil: [ debuggingActionsPragmas := {#debuggingAction} ]
