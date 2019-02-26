@@ -18,4 +18,6 @@ initializeWidgets
 	self code whenBuiltDo: [ :ann | ann widget font: self codeFont ].
 	self setFocusOrder.
 	scriptingPane := self instantiate: SpecDebuggerScriptingPane.
-	scriptingPane specDebugger: self
+	scriptingPane specDebugger: self.
+	
+	self code selection whenChangedSend: #selectionChanged to: self.
