@@ -1,6 +1,6 @@
 initialization
 initializeWidgets
-	stack := self instantiate: SpecDebuggerStack.
+	stack := self instantiate: self stackPresenterClass.
 	toolbar := self instantiate: SpecDebuggerDynamicToolbar.
 	advancedToolbar := self instantiate: SpecDebuggerDynamicToolbar.
 	advancedToolbar debuggingActionsPragmas: {#advancedDebuggingAction}.
