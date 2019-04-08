@@ -1,0 +1,3 @@
+helper
+doNiceThing
+	^ 'Nice Thing'

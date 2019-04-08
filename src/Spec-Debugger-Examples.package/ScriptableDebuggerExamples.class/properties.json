@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "TD 4/8/2019 11:56",
+	"super" : "Object",
+	"category" : "Spec-Debugger-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id"
+	],
+	"name" : "ScriptableDebuggerExamples",
+	"type" : "normal"
+}
