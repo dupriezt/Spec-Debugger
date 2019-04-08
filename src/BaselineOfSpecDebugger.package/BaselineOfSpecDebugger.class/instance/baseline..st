@@ -9,5 +9,7 @@ baseline: spec
 			"Packages"
 			spec
 				package: 'Spec-Debugger'" with: [ spec requires: #('Spec') ]";
-				package: 'DebuggerActions'.
+				package: 'DebuggerActions';
+				package: 'Spec-Debugger-Tests';
+				package: 'Spec-Debugger-Examples'.
 		 ]
