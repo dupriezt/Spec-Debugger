@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "ThomasDupriez 5/8/2019 19:58",
+	"super" : "Object",
+	"category" : "Spec-Debugger-DebugSession",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"debugSession",
+		"startContext",
+		"doContext",
+		"doArgumentBlock"
+	],
+	"name" : "StepToNextDoIteration",
+	"type" : "normal"
+}
