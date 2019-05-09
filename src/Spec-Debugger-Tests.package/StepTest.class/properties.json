@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Spec-Debugger-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"context",
+		"session",
+		"process"
+	],
+	"name" : "StepTest",
+	"type" : "normal"
+}

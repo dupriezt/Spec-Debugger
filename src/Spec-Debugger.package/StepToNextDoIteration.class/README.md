@@ -1,0 +1,5 @@
+Improvements:
+- Being able to disconnect the specDebugger auto-refresh when before doing things that perform a lot of stepInto, to remove the UI lag.
+- This could also be valid when the #do: message hasn't been sent yet, but is the next thing the top stack frame is about to do. Because right now you have to step into the #do: messageSend to have the option to step to its next iteration
+- When hovering over the corresponding button in the spec debugger, it would be nice if the stack frame of the do: message was highlighted to show which #do: is about to be stepped.
+- The available/nonAvailable state of the corresponding button in the specdebugger should change based on which context is selected in the stack. Right now button availability is not recomputed when a different stack frame is selected.

@@ -1,0 +1,3 @@
+as yet unclassified
+stepUntilAboutToSignalException
+	StepUntilAboutToSignalException executeOnDebugSession: self onContext: self interruptedContext.
