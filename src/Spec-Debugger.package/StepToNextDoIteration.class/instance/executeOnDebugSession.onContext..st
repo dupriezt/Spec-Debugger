@@ -3,6 +3,9 @@ executeOnDebugSession: aDebugSession onContext: aContext
 	debugSession := aDebugSession.
 	startContext := aContext.
 	(self isValidForContext: startContext) ifFalse: [ ^false ].
+	
+	debugSession deactivateEventTriggering.
+	[
 	(self contextIsAboutToSendDoToACollection: startContext) ifTrue: [ debugSession stepInto. startContext := debugSession interruptedContext ].
 	doContext := self searchDoContextUnderOrEqualTo: startContext.
 	doArgumentBlock := doContext arguments at: 1.
@@ -19,7 +22,7 @@ executeOnDebugSession: aDebugSession onContext: aContext
 		self stepToContextForBlock: doArgumentBlock.
 		^ true.
 	] on: ContextNotOnStack do: [ UIManager default inform: 'Next Do Iteration: Stopped because the #do: context is no longer on the stack' ]
-	
+	] ensure: [ debugSession activateEventTriggering ]
 	
 	
 	
