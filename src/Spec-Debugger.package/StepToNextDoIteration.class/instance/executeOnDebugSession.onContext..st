@@ -18,7 +18,7 @@ executeOnDebugSession: aDebugSession onContext: aContext
 		"case 2: startContext is above the doContext and there is no block context for doArgumentBlock between them"
 		self stepToContextForBlock: doArgumentBlock.
 		^ true.
-	] on: DoContextNotOnTheStack do: [ UIManager default inform: 'Next Do Iteration: Stopped because the #do: context is no longer on the stack' ]
+	] on: ContextNotOnStack do: [ UIManager default inform: 'Next Do Iteration: Stopped because the #do: context is no longer on the stack' ]
 	
 	
 	
