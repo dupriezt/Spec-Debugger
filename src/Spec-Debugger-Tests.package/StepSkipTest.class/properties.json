@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "StepTest",
+	"category" : "Spec-Debugger-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"instanceVariable"
+	],
+	"name" : "StepSkipTest",
+	"type" : "normal"
+}
