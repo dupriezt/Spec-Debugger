@@ -1,4 +1,4 @@
-private
+validity
 isValidForContext: aContext
 	"Returns true if there is a context for the Collection(or subclass)>>do: method under or equal to aContext"
 	((self searchDoContextUnderOrEqualTo: aContext) isNotNil) ifTrue: [ ^ true ].

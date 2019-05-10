@@ -1,4 +1,4 @@
-private
+validity
 isValidForDebugSession: aDebugSession
 	currentNode := self currentNodeOfContext: aDebugSession interruptedContext.
 	currentNode isMessage ifTrue: [ ^true ].
