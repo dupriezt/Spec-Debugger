@@ -7,10 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"debugSession",
-		"startContext",
-		"doContext",
-		"doArgumentBlock"
+		"currentContext",
+		"currentNode"
 	],
-	"name" : "StepToNextDoIteration",
+	"name" : "StepSkip",
 	"type" : "normal"
 }

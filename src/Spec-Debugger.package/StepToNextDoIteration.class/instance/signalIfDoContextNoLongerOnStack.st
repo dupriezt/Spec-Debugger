@@ -1,4 +1,4 @@
-signalling
+private
 signalIfDoContextNoLongerOnStack
 	(debugSession interruptedContext == doContext) ifTrue: [ ^true ].
 	(debugSession interruptedContext hasSender: doContext) ifTrue: [ ^true ].

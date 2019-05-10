@@ -1,16 +1,14 @@
 {
-	"commentStamp" : "ThomasDupriez 5/10/2019 13:38",
+	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "Spec-Debugger-DebugSession",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"debugSession",
-		"startContext",
-		"doContext",
-		"doArgumentBlock"
+		"process",
+		"debugSession"
 	],
-	"name" : "StepToNextDoIteration",
+	"name" : "ScriptableDebugger",
 	"type" : "normal"
 }
