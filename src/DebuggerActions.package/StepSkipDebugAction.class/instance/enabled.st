@@ -1,3 +1,3 @@
 actions
 enabled
-	^ StepSkip isValidForDebugSession: self session.
+	^ self session canStepSkip.
