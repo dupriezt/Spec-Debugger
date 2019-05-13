@@ -1,7 +1,7 @@
 start
 debug: aBlock
-	process := aBlock forkNamed: 'ScrptblDbgExec'.
-	process suspend.
+	| context |
+	process := aBlock newProcess name: 'ScrptblDbgExec'.
 	debugSession := DebugSessionPlus new
 		name: 'ScrptblDbgDebugSession';
 		process: process context: process suspendedContext.

@@ -1,5 +1,6 @@
 querying
 contextIsAboutToSignalException: aContext
+	"Returns whether aContext is about to execute a message-send of selector #signal to an instance of the Exception class (or one of its subclasses)"
 	| node |
 	node := aContext method sourceNodeForPC: aContext pc.
 	(node isMessage) ifFalse: [ ^false ].
