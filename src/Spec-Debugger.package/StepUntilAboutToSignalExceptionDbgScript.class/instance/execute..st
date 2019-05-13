@@ -1,0 +1,3 @@
+running
+execute: aScriptableDebugger
+	aScriptableDebugger stepWhileFalse: [ aScriptableDebugger contextIsAboutToSignalException: aScriptableDebugger currentContext ]

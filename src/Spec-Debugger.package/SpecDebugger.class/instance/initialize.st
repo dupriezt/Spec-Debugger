@@ -1,6 +1,6 @@
 initialization
 initialize
-
+	terminateDebugSessionWhenClearing := true.
 	sessionHolder := nil asValueHolder.
 	labelHolder := nil asValueHolder.
 	super initialize.

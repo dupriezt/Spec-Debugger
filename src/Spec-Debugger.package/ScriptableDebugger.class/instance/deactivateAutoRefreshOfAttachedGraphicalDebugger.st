@@ -1,0 +1,3 @@
+graphical debugger
+deactivateAutoRefreshOfAttachedGraphicalDebugger
+	debugSession deactivateEventTriggering.

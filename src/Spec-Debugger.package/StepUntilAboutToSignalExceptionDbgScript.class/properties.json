@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DebuggerScript",
+	"category" : "Spec-Debugger-DebugSession",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "StepUntilAboutToSignalExceptionDbgScript",
+	"type" : "normal"
+}

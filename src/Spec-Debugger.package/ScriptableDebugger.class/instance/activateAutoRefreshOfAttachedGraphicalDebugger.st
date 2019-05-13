@@ -1,0 +1,4 @@
+graphical debugger
+activateAutoRefreshOfAttachedGraphicalDebugger
+	debugSession activateEventTriggering.
+	self refreshAttachedGraphicalDebugger.

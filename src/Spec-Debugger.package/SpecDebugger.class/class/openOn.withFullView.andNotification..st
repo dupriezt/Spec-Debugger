@@ -6,4 +6,5 @@ openOn: aDebugSession withFullView: aBool andNotification: aString
 	
 	aBool | self alwaysOpenFullDebugger
 		ifTrue: [ debugger openWithFullView ]
-		ifFalse: [ debugger openWithNotification: aString]
+		ifFalse: [ debugger openWithNotification: aString].
+	^ debugger.

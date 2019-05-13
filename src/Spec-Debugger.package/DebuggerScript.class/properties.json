@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "ThomasDupriez 5/13/2019 01:42",
+	"super" : "Object",
+	"category" : "Spec-Debugger-DebugSession",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DebuggerScript",
+	"type" : "normal"
+}

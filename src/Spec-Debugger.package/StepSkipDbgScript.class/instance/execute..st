@@ -1,0 +1,26 @@
+running
+execute: aScriptableDebugger
+	scdbg := aScriptableDebugger.
+	self isValid ifFalse: [ ^ self ]. 
+	scdbg currentNode isMessage ifTrue: [
+		"Pop the arguments of the message send from the context's value stack"
+		scdbg currentNode arguments do: [ :arg | scdbg currentContext pop ].
+		"Pop the receiver from the context's value stack"
+		scdbg currentContext pop.
+		"Push a nil value on the context's value stack, to simulate that the message send happened and returned nil"
+		scdbg currentContext push: nil.
+		"Increase the pc to go over the message send"
+		scdbg currentContext pc: scdbg currentContext pc + 1.
+	].
+	scdbg currentNode isAssignment ifTrue: [
+		"Pop the value to be assigned"
+		scdbg currentContext pop.
+		"Push nil on the context's value stack, to simulate that the assignment happened and had value nil"
+		scdbg currentContext push: nil.
+		"Increase the pc to go over the assignment"
+		scdbg currentContext pc: scdbg currentContext pc + 2.
+	].
+
+	"Execute bytecodes the debugger usually executes without stopping the execution (for example popping the return value of the just executed message send if it is not used afterwards)"
+	scdbg debugSession stepToFirstInterestingBytecodeIn: scdbg debugSession interruptedProcess.
+	

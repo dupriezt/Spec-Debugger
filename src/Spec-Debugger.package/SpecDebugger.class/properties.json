@@ -27,7 +27,8 @@
 		"recordSteps",
 		"showScriptingPane",
 		"showAdvancedToolbar",
-		"advancedToolbar"
+		"advancedToolbar",
+		"terminateDebugSessionWhenClearing"
 	],
 	"name" : "SpecDebugger",
 	"type" : "normal"
