@@ -1,3 +1,3 @@
 initialize
 initialize
-	ScriptableDebugger registerDebuggerScript: [ :aScriptableDebugger | self new execute: aScriptableDebugger ] underName: self scriptName.
+	ScriptableDebugger registerDebuggerScript: self underName: self scriptName.
