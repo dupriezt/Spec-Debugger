@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Spec-Debugger-DebugSession",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"echoContexts",
+		"echoMethods"
+	],
+	"name" : "EchoDebuggingConfiguration",
+	"type" : "normal"
+}

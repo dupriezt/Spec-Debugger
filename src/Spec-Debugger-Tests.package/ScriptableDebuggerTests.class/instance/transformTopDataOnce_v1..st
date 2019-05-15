@@ -1,4 +1,4 @@
-bug - transformStack
+bug example - transformStack
 transformTopDataOnce_v1: data
 	| d |
 	"(data top isInteger) ifTrue: [ d := data pop. data push: d asCharacterDigit ]."

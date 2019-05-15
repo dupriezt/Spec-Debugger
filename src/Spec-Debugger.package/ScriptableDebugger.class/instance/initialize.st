@@ -1,3 +1,5 @@
 initialization
 initialize
-	breakpoints := OrderedCollection new
+	breakpoints := OrderedCollection new.
+	echoconf := EchoDebuggingConfiguration new.
+	filterWhyEchoDebugging := true.

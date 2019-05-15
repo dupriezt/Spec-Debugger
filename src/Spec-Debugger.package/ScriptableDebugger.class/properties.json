@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "ThomasDupriez 5/14/2019 16:41",
+	"commentStamp" : "ThomasDupriez 5/15/2019 16:21",
 	"super" : "Object",
 	"category" : "Spec-Debugger-DebugSession",
 	"classinstvars" : [ ],
@@ -10,7 +10,9 @@
 	"instvars" : [
 		"process",
 		"debugSession",
-		"breakpoints"
+		"breakpoints",
+		"echoconf",
+		"filterWhyEchoDebugging"
 	],
 	"name" : "ScriptableDebugger",
 	"type" : "normal"

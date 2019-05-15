@@ -1,4 +1,4 @@
-bug - transformStack
+bug example - transformStack
 transformStack_v2
 	"Adding that Integers should be transformed into characters"
 	| data d |
