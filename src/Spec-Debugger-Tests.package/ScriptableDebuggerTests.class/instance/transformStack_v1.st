@@ -2,7 +2,7 @@ bug - transformStack
 transformStack_v1
 
 	| data d |
-	"transformation: int -> char -> string"
+	"transformation: char -> string"
 	data := Stack new push: 3; push: $b; push: 'a'; yourself. "top ->{ 'a'. $b. 3 }"
 	"goal: {'a'. 'b'. 3}"
 	self transformTopDataOnce_v1: data.
