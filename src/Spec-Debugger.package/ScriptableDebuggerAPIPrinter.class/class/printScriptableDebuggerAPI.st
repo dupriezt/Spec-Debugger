@@ -1,6 +1,6 @@
 printing
 printScriptableDebuggerAPI
-	"In latex format for the paper"
+	"In latex format for the paper. You have to escape characters like \ and # yourself if they appear in comments."
 | protocolToMethodList rws |
 protocolToMethodList := Dictionary new.
 ScriptableDebugger methodDictionary valuesDo: [ :cmpMethod |
