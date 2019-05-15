@@ -1,0 +1,1 @@
+This class is no longer necessary since the skip operator has been added to the ScriptableDebugger API

@@ -8,9 +8,9 @@ continue
 	exceptionClassBeingSignalled := self currentContext at: ((self valueStackSizeOfContext: self currentContext) - signalMessageNode arguments size).
 	(exceptionClassBeingSignalled == Halt) ifTrue: [ 
 		"Encountered a Halt (typically signalled by a 'self halt')"
-		self executeDebuggerScriptNamed: #skip.
+		self skip.
 	].
 	(exceptionClassBeingSignalled == Break) ifTrue: [ 
 		"Encountered a Break (i.e. a breakpoint)"
-		self executeDebuggerScriptNamed: #skip.
+		self skip.
 	]

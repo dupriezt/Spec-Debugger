@@ -1,8 +1,7 @@
 stepping
 skip: replacementValue
 	"If the current node is a message send or assignment"
-	self currentNode isMessage ifFalse: [ ^false ].
-	self currentNode isAssignment ifFalse: [ ^false ]
+	((self currentNode isMessage not) and: [ self currentNode isAssignment not]) ifTrue: [ ^false ].
 	self currentNode isMessage ifTrue: [
 		"Pop the arguments of the message send from the context's value stack"
 		self currentNode arguments do: [ :arg | self currentContext pop ].
