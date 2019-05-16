@@ -14,7 +14,7 @@ context: aContext isEchoContextOf: anotherContext returnReason: aBoolean
 	(aContext receiver class == anotherContext receiver class) ifFalse: [ 
 			^ self returnReason: aBoolean boolean: false reason: (self whyFormatterForReason: 'Not echo contexts: Different receiver class' firstObject: aContext receiver class secondObject: anotherContext receiver class) ].
 	"Method selector"
-	(self methodSelector: (aContext method selector) inClass: (aContext receiver class) isEchoMethodSelectorOf: (anotherContext method selector) inClass: (anotherContext receiver class)) ifFalse: [ 
+	(self methodSelector: (aContext method selector) inClass: (aContext receiver class) isEchoMethodSelectorOf: (anotherContext method selector) inClass: (anotherContext receiver class) returnReason: false) ifFalse: [ 
 		^ self methodSelector: (aContext method selector) inClass: (aContext receiver class) isEchoMethodSelectorOf: (anotherContext method selector) inClass: (anotherContext receiver class) returnReason: aBoolean
 	].
 "	((aContext method selector == anotherContext method selector) or: [ self methodSelector: (aContext method selector) inClass: (aContext receiver class) isEchoMethodSelectorOf: (anotherContext method selector) inClass: (anotherContext receiver class) ]) ifFalse: [ 
