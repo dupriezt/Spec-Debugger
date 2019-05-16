@@ -10,7 +10,8 @@ ScriptableDebugger methodDictionary valuesDo: [ :cmpMethod |
 	(protocolToMethodList at: prot) add: cmpMethod.
 ].
 rws := ReadWriteStream with: LinkedList new.
-protocolToMethodList associationsDo: [ :assoc |
+"Sort the protocols alphabetically"
+(protocolToMethodList associations sort: [ :asso1 :asso2 | (asso1 key) <= (asso2 key) ]) do: [ :assoc |
 	|prot cmpMethodList|
 	prot := assoc key. cmpMethodList := assoc value.
 	((prot endsWith: 'private') or: [prot = 'initialization']) ifFalse: [ 

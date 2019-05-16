@@ -11,8 +11,7 @@
 		"process",
 		"debugSession",
 		"breakpoints",
-		"echoconf",
-		"filterWhyEchoDebugging"
+		"echoconf"
 	],
 	"name" : "ScriptableDebugger",
 	"type" : "normal"

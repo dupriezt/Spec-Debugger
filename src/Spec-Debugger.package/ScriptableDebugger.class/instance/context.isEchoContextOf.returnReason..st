@@ -4,7 +4,7 @@ context: aContext isEchoContextOf: anotherContext returnReason: aBoolean
 	Two contexts are echo contexts of each other if:
 		- their receiver are of the same class and:
 		- their method selector are echoes of each otherthe same (or they have been manually declared to be echo method selectors) and:
-		- their pc are equal
+		- their current AST nodes are equal (=)
 	They are also echo contexts if they have been manually defined to be so.	
 	"
 	"Checking if these two contexts have been declared to be echo contexts"
@@ -19,8 +19,12 @@ context: aContext isEchoContextOf: anotherContext returnReason: aBoolean
 	].
 "	((aContext method selector == anotherContext method selector) or: [ self methodSelector: (aContext method selector) inClass: (aContext receiver class) isEchoMethodSelectorOf: (anotherContext method selector) inClass: (anotherContext receiver class) ]) ifFalse: [ 
 			^ self returnReason: aBoolean boolean: false reason: (self whyFormatterForReason: 'Different method selector' firstObject: (aContext method selector) secondObject: (anotherContext method selector)) ]."
+	"ast node"
+	((self currentNodeForContext: aContext) = (self currentNodeForContext: anotherContext)) ifFalse: [ 
+		^ self returnReason: aBoolean boolean: false reason: (self whyFormatterForReason: 'Not echo contexts: different current AST nodes' firstObject: (self currentNodeForContext: aContext) secondObject: (self currentNodeForContext: anotherContext))	
+	].
 	"pc"
-	(aContext pc == anotherContext pc) ifFalse: [ 
-			^ self returnReason: aBoolean boolean: false reason: (self whyFormatterForReason: 'Not echo contexts: Different pc' firstObject: (aContext pc) secondObject: (anotherContext pc)) ].
+	"(aContext pc == anotherContext pc) ifFalse: [ 
+			^ self returnReason: aBoolean boolean: false reason: (self whyFormatterForReason: 'Not echo contexts: Different pc' firstObject: (aContext pc) secondObject: (anotherContext pc)) ]."
 	"True if all previous checked passed"
 	^ self returnReason: aBoolean boolean: true reason: 'Echo Contexts'.
