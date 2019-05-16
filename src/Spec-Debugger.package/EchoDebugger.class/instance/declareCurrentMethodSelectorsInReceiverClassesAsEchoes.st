@@ -1,0 +1,3 @@
+echo debugging
+declareCurrentMethodSelectorsInReceiverClassesAsEchoes
+	self declareMethodSelector: scdbg1 currentMethod selector inClass: scdbg1 currentReceiver class asEchoMethodSelectorOf: scdbg2 currentMethod selector inClass: scdbg2 currentReceiver class.

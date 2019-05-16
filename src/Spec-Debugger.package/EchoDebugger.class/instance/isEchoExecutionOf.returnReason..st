@@ -1,4 +1,4 @@
-echo debugging - private
+dustbin
 isEchoExecutionOf: aScriptableDebugger returnReason: aBoolean
 	| selfStack foreignStack |
 	selfStack := self currentContext stack.

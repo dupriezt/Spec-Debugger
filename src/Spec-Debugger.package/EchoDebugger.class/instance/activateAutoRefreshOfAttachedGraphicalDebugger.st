@@ -1,0 +1,4 @@
+graphical debugger
+activateAutoRefreshOfAttachedGraphicalDebugger
+	scdbg1 activateAutoRefreshOfAttachedGraphicalDebugger.
+	scdbg2 activateAutoRefreshOfAttachedGraphicalDebugger.

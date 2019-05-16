@@ -1,0 +1,3 @@
+echo debugging
+declareCurrentContextsAsEchoes
+	echoconf declareContext: scdbg1 currentContext asEchoContextOf: scdbg2 currentContext.

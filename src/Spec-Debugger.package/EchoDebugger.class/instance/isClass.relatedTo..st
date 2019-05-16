@@ -1,4 +1,4 @@
-echo debugging - private
+echo debugging -private
 isClass: aClass relatedTo: anotherClass
 	"True if:
 		- aClass == anotherClass or:

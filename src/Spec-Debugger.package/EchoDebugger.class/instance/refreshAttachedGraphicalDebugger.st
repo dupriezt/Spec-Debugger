@@ -1,0 +1,4 @@
+graphical debugger
+refreshAttachedGraphicalDebugger
+	scdbg1 refreshAttachedGraphicalDebugger.
+	scdbg2 refreshAttachedGraphicalDebugger.

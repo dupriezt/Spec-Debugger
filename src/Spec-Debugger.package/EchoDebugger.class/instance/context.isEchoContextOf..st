@@ -1,4 +1,4 @@
-echo debugging
+dustbin
 context: aContext isEchoContextOf: anotherContext
 	"Returns whether aContext and anotherContext are echoes of each other.
 	Two contexts are echo contexts of each other if:

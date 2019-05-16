@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "ThomasDupriez 5/16/2019 14:58",
+	"super" : "Object",
+	"category" : "Spec-Debugger-DebugSession",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"echoconf",
+		"filterWhyEchoDebugging",
+		"scdbg1",
+		"scdbg2"
+	],
+	"name" : "EchoDebugger",
+	"type" : "normal"
+}

@@ -1,4 +1,4 @@
-echo debugging
+dustbin
 methodSelector: aSelector inClass: aClass isEchoMethodSelectorOf: anotherSelector inClass: anotherClass
 		"A method selector S1 in a class C1 is an echo of another method selector S2 in another class C2 if:
 	- they have been manually declared to be echoes or:

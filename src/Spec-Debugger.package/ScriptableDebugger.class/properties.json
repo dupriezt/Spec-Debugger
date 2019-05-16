@@ -10,8 +10,7 @@
 	"instvars" : [
 		"process",
 		"debugSession",
-		"breakpoints",
-		"echoconf"
+		"breakpoints"
 	],
 	"name" : "ScriptableDebugger",
 	"type" : "normal"

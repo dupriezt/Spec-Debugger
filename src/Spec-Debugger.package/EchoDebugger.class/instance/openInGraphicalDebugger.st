@@ -1,0 +1,4 @@
+graphical debugger
+openInGraphicalDebugger
+	scdbg1 openInGraphicalDebugger.
+	scdbg2 openInGraphicalDebugger.

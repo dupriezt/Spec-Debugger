@@ -1,4 +1,4 @@
-echo debugging - private
+echo debugging -private
 context: aContext isEchoContextOf: anotherContext returnReason: aBoolean
 	"Returns whether aContext and anotherContext are echoes of each other.
 	Two contexts are echo contexts of each other if:
@@ -20,8 +20,8 @@ context: aContext isEchoContextOf: anotherContext returnReason: aBoolean
 "	((aContext method selector == anotherContext method selector) or: [ self methodSelector: (aContext method selector) inClass: (aContext receiver class) isEchoMethodSelectorOf: (anotherContext method selector) inClass: (anotherContext receiver class) ]) ifFalse: [ 
 			^ self returnReason: aBoolean boolean: false reason: (self whyFormatterForReason: 'Different method selector' firstObject: (aContext method selector) secondObject: (anotherContext method selector)) ]."
 	"ast node"
-	((self currentNodeForContext: aContext) = (self currentNodeForContext: anotherContext)) ifFalse: [ 
-		^ self returnReason: aBoolean boolean: false reason: (self whyFormatterForReason: 'Not echo contexts: different current AST nodes' firstObject: (self currentNodeForContext: aContext) secondObject: (self currentNodeForContext: anotherContext))	
+	((scdbg1 currentNodeForContext: aContext) = (scdbg2 currentNodeForContext: anotherContext)) ifFalse: [ 
+		^ self returnReason: aBoolean boolean: false reason: (self whyFormatterForReason: 'Not echo contexts: different current AST nodes' firstObject: (scdbg1 currentNodeForContext: aContext) secondObject: (scdbg2 currentNodeForContext: anotherContext))	
 	].
 	"pc"
 	"(aContext pc == anotherContext pc) ifFalse: [ 
