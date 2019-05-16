@@ -23,7 +23,7 @@ runExample_sumXPoint
 	"Print the following to know why the current contexts of the two executions aren't echoes"
 	echodbg whyareCurrentContextsEchoes.
 	
-	echodbg declareCurrentMethodSelectorsInReceiverClassesAsEchoes.
+	echodbg declareCurrentMethodSelectorsAsEchoes.
 	
 	echodbg mirrorStepUntilDivergence.
 	echodbg refreshAttachedGraphicalDebugger.

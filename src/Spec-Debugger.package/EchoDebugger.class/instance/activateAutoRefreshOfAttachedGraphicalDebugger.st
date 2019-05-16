@@ -1,4 +1,5 @@
 graphical debugger
 activateAutoRefreshOfAttachedGraphicalDebugger
+	"Activate the auto refresh of attached graphical debuggers for the two executions"
 	scdbg1 activateAutoRefreshOfAttachedGraphicalDebugger.
 	scdbg2 activateAutoRefreshOfAttachedGraphicalDebugger.

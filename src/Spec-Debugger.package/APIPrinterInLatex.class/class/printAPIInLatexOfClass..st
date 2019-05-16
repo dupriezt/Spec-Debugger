@@ -1,9 +1,9 @@
 printing
-printScriptableDebuggerAPI
+printAPIInLatexOfClass: aClass
 	"In latex format for the paper. You have to escape characters like \ and # yourself if they appear in comments. Does not print methods in the 'initialize' protocol, or in a protocol ending with 'private'"
 | protocolToMethodList rws |
 protocolToMethodList := Dictionary new.
-ScriptableDebugger methodDictionary valuesDo: [ :cmpMethod |
+aClass methodDictionary valuesDo: [ :cmpMethod |
 	|prot|
 	prot := cmpMethod protocol.
 	(protocolToMethodList includesKey: prot) ifFalse: [ protocolToMethodList at: prot put: LinkedList new ].
