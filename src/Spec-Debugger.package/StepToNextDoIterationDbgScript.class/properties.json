@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "DebuggerScript",
+	"category" : "Spec-Debugger-DebugSession",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"startContext",
+		"scdbg",
+		"doContext",
+		"doArgumentBlock"
+	],
+	"name" : "StepToNextDoIterationDbgScript",
+	"type" : "normal"
+}

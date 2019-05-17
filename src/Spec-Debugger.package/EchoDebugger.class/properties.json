@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "ThomasDupriez 5/16/2019 14:58",
+	"commentStamp" : "ThomasDupriez 5/17/2019 13:56",
 	"super" : "Object",
 	"category" : "Spec-Debugger-DebugSession",
 	"classinstvars" : [ ],
@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"echoconf",
-		"filterWhyEchoDebugging",
 		"scdbg1",
 		"scdbg2"
 	],
