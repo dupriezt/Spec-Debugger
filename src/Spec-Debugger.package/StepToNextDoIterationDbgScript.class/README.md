@@ -1,0 +1,1 @@
+If aContext has among its senders a context for the #do: method of an instance of Collection (or subclasses), step until the next time the argument block of #do: is executed (or until the #do: context is popped if it happens first)
