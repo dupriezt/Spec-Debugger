@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Spec-Debugger-DebugSession",
+	"category" : "Spec-Debugger-ScriptableDebugger",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
