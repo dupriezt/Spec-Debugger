@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ExampleExecutionStackTransform1",
+	"category" : "Spec-Debugger-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ExampleExecutionStackTransform2",
+	"type" : "normal"
+}
