@@ -27,7 +27,7 @@ rws := ReadWriteStream with: LinkedList new.
 			].
 			comment := ''.
 			(cmpMethod comment) ifNotNil: [ comment := cmpMethod comment, Character cr asString ].
-			rws nextPutAll: '\begin{lstlisting}[style=mystyle]', Character cr asString, fullSelector, '\end{lstlisting}', Character cr asString, comment, Character cr asString.
+			rws nextPutAll: '\begin{lstlisting}', Character cr asString, fullSelector, '\end{lstlisting}', Character cr asString, comment, Character cr asString.
 		].
 	].
 ].
