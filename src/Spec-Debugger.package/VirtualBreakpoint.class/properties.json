@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "ThomasDupriez 5/17/2019 14:01",
+	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "Spec-Debugger-ScriptableDebugger",
 	"classinstvars" : [ ],
@@ -8,12 +8,8 @@
 		"debuggerScripts"
 	],
 	"instvars" : [
-		"process",
-		"debugSession",
-		"breakpoints",
-		"stepHooks",
-		"virtualBreakpoints"
+		"node"
 	],
-	"name" : "ScriptableDebugger",
+	"name" : "VirtualBreakpoint",
 	"type" : "normal"
 }
