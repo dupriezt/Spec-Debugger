@@ -11,5 +11,7 @@ baseline: spec
 				package: 'Spec-Debugger'" with: [ spec requires: #('Spec') ]";
 				package: 'DebuggerActions';
 				package: 'Spec-Debugger-Tests';
-				package: 'Spec-Debugger-Examples'.
+				package: 'Spec-Debugger-Examples';
+				package: 'ScriptableDebugger';
+				package: 'ScriptableDebugger-Tests'.
 		 ]

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "ThomasDupriez 5/15/2019 10:18",
+	"super" : "DebuggerScript",
+	"category" : "ScriptableDebugger",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scdbg"
+	],
+	"name" : "StepSkipDbgScript",
+	"type" : "normal"
+}

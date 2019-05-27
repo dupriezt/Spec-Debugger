@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ScriptableDebugger",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"debuggerScripts"
+	],
+	"instvars" : [
+		"node"
+	],
+	"name" : "VirtualBreakpoint",
+	"type" : "normal"
+}

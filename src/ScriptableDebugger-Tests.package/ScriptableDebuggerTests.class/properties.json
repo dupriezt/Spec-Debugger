@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "ScriptableDebugger-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scdbg"
+	],
+	"name" : "ScriptableDebuggerTests",
+	"type" : "normal"
+}

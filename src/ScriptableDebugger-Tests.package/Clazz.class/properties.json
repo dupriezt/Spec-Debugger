@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Scenario1SetBreakpointWhenAGivenFieldIsAssignedAGivenValue",
+	"category" : "ScriptableDebugger-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"var"
+	],
+	"name" : "Clazz",
+	"type" : "normal"
+}

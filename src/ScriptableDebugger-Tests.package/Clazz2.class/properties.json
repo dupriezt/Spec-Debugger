@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ScenarioSetBreakpointsOnMethodsCallingAGivenMethoWithAGivenArgument",
+	"category" : "ScriptableDebugger-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Clazz2",
+	"type" : "normal"
+}

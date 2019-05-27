@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "ThomasDupriez 5/17/2019 15:55",
+	"super" : "DebuggerScript",
+	"category" : "ScriptableDebugger",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"startContext",
+		"scdbg",
+		"doContext",
+		"doArgumentBlock"
+	],
+	"name" : "StepToNextDoIterationDbgScript",
+	"type" : "normal"
+}
