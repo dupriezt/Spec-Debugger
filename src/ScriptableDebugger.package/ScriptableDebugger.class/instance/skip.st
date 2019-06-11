@@ -1,3 +1,3 @@
 stepping
 skip
-	self skip: nil.
+	self skipWith: nil.
