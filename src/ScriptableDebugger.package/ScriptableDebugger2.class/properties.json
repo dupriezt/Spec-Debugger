@@ -4,15 +4,12 @@
 	"category" : "ScriptableDebugger",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [
-		"all"
-	],
+	"classvars" : [ ],
 	"instvars" : [
-		"node",
-		"setter",
-		"breakOnce",
-		"whenHit"
+		"process",
+		"debugSession",
+		"stepHooks"
 	],
-	"name" : "VirtualBreakpoint",
+	"name" : "ScriptableDebugger2",
 	"type" : "normal"
 }
