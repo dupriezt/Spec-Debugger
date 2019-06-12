@@ -6,7 +6,7 @@ messageArguments
 	argumentNumber := self currentNode arguments size.
 	arguments := OrderedCollection new.
 	i := 0.
-	(i = argumentNumber) whileFalse: [ 
+	[i = argumentNumber] whileFalse: [ 
 		arguments add: (self context at: self currentContextStackSize - argumentNumber + i + 1).
 		i := i + 1.
 	].
