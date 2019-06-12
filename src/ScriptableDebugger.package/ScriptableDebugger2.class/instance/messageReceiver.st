@@ -1,5 +1,5 @@
-stackAccessHelpers
+querying
 messageReceiver
-	"Returns the receiver of the message about to be sent, if the current node is a message node."
+	"If the currentNode is a message node, returns the value of its receiver"
 	(self currentNode isMessage) ifFalse: [ Error signal: 'Not about to send a message' ].
-	^ self context at: (self currentContextStackSize) - (self currentNode arguments size).
+	^ self currentContext at: (self valueStackSizeOfContext: self currentContext) - (self currentNode arguments size).

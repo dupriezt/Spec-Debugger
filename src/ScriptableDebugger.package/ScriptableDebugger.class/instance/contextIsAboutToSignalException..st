@@ -1,4 +1,4 @@
-querying - context property
+private
 contextIsAboutToSignalException: aContext
 	"Returns whether aContext is about to execute a message-send of selector #signal to an instance of the Exception class (or one of its subclasses)"
 	| node |

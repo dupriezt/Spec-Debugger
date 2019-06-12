@@ -2,7 +2,7 @@ as yet unclassified
 testSetBreakpoints
 "Not a real test"
 	| node1 node2 |
-	scdbg := ScriptableDebugger debug: [ self helperToSetBreakpointsOn ].
+	scdbg := ScriptableDebugger2 debug: [ self helperToSetBreakpointsOn ].
 	scdbg step.
 	node1 := scdbg currentNode.
 	scdbg stepOver.

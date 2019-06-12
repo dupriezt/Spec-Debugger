@@ -1,5 +1,5 @@
 stepping
 step
-	"Executes the next instruction. If the instruction is a message-send, step inside it."
+	"Step the execution once"
 	debugSession stepInto.
 	stepHooks do: [ :aBlock | aBlock value ].

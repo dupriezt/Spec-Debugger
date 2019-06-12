@@ -2,7 +2,7 @@ example
 runExample
 	<script>
 	| scdbg |
-	scdbg := ScriptableDebugger debug: [ self doCollectionExample ].
+	scdbg := ScriptableDebugger2 debug: [ self doCollectionExample ].
 	self halt.
 	"Execute the following to open the execution in a graphical debugger."
 	"scdbg openInGraphicalDebugger."

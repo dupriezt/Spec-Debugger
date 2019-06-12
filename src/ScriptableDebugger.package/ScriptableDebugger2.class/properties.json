@@ -1,14 +1,18 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "ThomasDupriez 5/17/2019 14:01",
 	"super" : "Object",
 	"category" : "ScriptableDebugger",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"debuggerScripts"
+	],
 	"instvars" : [
 		"process",
 		"debugSession",
-		"stepHooks"
+		"breakpoints",
+		"stepHooks",
+		"virtualBreakpoints"
 	],
 	"name" : "ScriptableDebugger2",
 	"type" : "normal"

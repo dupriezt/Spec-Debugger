@@ -1,5 +1,5 @@
 initialize
 registerAllSubclasses
 	<script>
-	self allSubclassesDo: [ :aSubclass | ScriptableDebugger registerDebuggerScript: aSubclass underName: aSubclass scriptName. ]
+	self allSubclassesDo: [ :aSubclass | ScriptableDebugger2 registerDebuggerScript: aSubclass underName: aSubclass scriptName. ]
 	

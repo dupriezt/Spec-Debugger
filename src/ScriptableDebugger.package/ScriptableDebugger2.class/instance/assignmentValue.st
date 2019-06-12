@@ -1,5 +1,5 @@
-stackAccessHelpers
+querying
 assignmentValue
-	"Returns the value about to be assigned, if the current node is an assignment node."
+	"If the currentNode is an assignment node, returns the value of being assigned"
 	(self currentNode isAssignment) ifFalse: [ Error signal: 'Not about to perform a assignment' ].
-	^ self context at: self currentContextStackSize.
+	^ self currentContext at: (self valueStackSizeOfContext: self currentContext).

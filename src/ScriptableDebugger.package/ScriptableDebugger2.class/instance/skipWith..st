@@ -1,6 +1,6 @@
 stepping
 skipWith: replacementValue
-	"If it is a message-send or assignment, skips the execution of the current instruction, and puts the replacementValue on the execution stack."
+	"Skips the current message-send or assignment and use replacementValue as their return value instead"
 	"If the current node is a message send or assignment"
 	((self currentNode isMessage not) and: [ self currentNode isAssignment not]) ifTrue: [ ^false ].
 	self currentNode isMessage ifTrue: [

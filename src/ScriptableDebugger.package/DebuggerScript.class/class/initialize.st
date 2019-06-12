@@ -1,3 +1,3 @@
 initialize
 initialize
-	ScriptableDebugger registerDebuggerScript: self underName: self scriptName.
+	ScriptableDebugger2 registerDebuggerScript: self underName: self scriptName.
