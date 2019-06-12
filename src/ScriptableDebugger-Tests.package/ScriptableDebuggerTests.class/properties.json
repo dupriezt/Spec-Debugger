@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"scdbg"
+		"scdbg",
+		"breakpointsBeforeTest"
 	],
 	"name" : "ScriptableDebuggerTests",
 	"type" : "normal"
