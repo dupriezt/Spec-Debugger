@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "<historical>",
 	"super" : "EyeMethodContextInspector",
-	"category" : "Spec-Debugger",
+	"category" : "Spec-Debugger-Debugger",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

@@ -4,6 +4,7 @@ defaultSpecWith: toolbarsSpecs
 		newColumn: [ :col | 
 			col
 				add: #stack;
+				add: #stackTable;
 				add: #toolbar height: self toolbarHeight.
 			toolbarsSpecs do:
 					[ :toolbarNameAndSize | col add: toolbarNameAndSize first height: toolbarNameAndSize last ].

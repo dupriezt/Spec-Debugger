@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "ThomasDupriez 2/18/2019 15:53",
 	"super" : "ButtonPresenter",
-	"category" : "Spec-Debugger",
+	"category" : "Spec-Debugger-Debugger",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

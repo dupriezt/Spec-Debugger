@@ -10,7 +10,7 @@ debugWithSpecDebugger
 		[
 			debugSession stepOver.
 			debugSession stepOver.
-			SpecDebugger openOn: debugSession withFullView: true
+			SpecDebugger openOn: debugSession withFullView: false
 		] on: Error do: [ :ex | 	debugSession signalDebuggerError: ex]
 	].
 	

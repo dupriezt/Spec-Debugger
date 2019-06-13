@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "<historical>",
 	"super" : "ComposablePresenter",
-	"category" : "Spec-Debugger",
+	"category" : "Spec-Debugger-Debugger",
 	"classinstvars" : [
 		"showScriptingPane",
 		"showAdvancedDebuggingToolbar"
@@ -28,7 +28,8 @@
 		"showScriptingPane",
 		"showAdvancedToolbar",
 		"advancedToolbar",
-		"terminateDebugSessionWhenClearing"
+		"terminateDebugSessionWhenClearing",
+		"stackTable"
 	],
 	"name" : "SpecDebugger",
 	"type" : "normal"
