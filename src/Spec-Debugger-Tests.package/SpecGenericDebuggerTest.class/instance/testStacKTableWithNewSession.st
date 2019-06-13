@@ -1,5 +1,5 @@
 tests - stack table
-testStacKTableWithNewSession
+testStackTableWithNewSession
 	self debugger session: session.
 	self
 		assert: self debugger stackTable items

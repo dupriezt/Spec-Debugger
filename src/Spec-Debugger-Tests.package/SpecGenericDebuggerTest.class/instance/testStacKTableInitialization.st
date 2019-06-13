@@ -1,4 +1,4 @@
 tests - stack table
-testStacKTableInitialization
+testStackTableInitialization
 
 	self assert: self debugger stackTable items isEmpty
