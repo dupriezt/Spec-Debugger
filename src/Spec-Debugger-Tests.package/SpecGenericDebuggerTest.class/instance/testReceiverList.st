@@ -1,3 +1,3 @@
 tests - receiver inspector
-testReceiverUpdateAfterStepIn 
+testReceiverList
 	self assert: false

@@ -1,7 +1,12 @@
 running
 setUp
 	| context process |
-	context := [ 1 + 1 squared] asContext.
+	context := [ | i |
+	i := 1 squared.
+	i = 1
+		ifTrue: [ | j |
+			j := i + 1 ].
+	^ 1 + i] asContext.
 	process := Process
 		forContext: context
 		priority: Processor userInterruptPriority.

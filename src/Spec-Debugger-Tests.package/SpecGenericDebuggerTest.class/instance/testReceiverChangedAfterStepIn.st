@@ -1,3 +1,3 @@
 tests - receiver inspector
-testReceiverInstVarList
+testReceiverChangedAfterStepIn 
 	self assert: false

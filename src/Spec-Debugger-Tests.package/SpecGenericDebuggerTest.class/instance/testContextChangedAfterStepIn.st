@@ -1,3 +1,3 @@
 tests - context inspector
-testContextTempVarSelection
+testContextChangedAfterStepIn 
 	self assert: false
