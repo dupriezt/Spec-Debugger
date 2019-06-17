@@ -6,10 +6,12 @@ initializeWidgets
 	advancedToolbar := self instantiate: SpecDebuggerDynamicToolbar.
 	advancedToolbar debuggingActionsPragmas: {#advancedDebuggingAction}.
 	advancedToolbar buttonColor: self theme advancedActionButtonColor.
-	
 	code := self newCode.
 	receiverInspector := self instantiate: InspectorNavigator.
-	contextInspector := self instantiate: EyeDebuggerContextInspector.
+	"contextInspector := self instantiate: EyeDebuggerContextInspector."
+	contextInspector := StDebuggerInspector
+		newApplication: SpecNullApplication new
+		model: (StInspectorModel on: [] asContext).
 	self code
 		acceptBlock: [ :text :notifyer | 
 			self
@@ -20,5 +22,4 @@ initializeWidgets
 	self setFocusOrder.
 	scriptingPane := self instantiate: SpecDebuggerScriptingPane.
 	scriptingPane specDebugger: self.
-	
-	self code selection whenChangedSend: #selectionChanged to: self.
+	self code selection whenChangedSend: #selectionChanged to: self

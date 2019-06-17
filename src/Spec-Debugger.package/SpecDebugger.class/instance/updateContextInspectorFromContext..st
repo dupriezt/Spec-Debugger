@@ -1,6 +1,9 @@
 updating
 updateContextInspectorFromContext: aContext
-	| oldSelection newSelectionIndex   |
+	aContext ifNil:[self halt].
+	contextInspector updateWith: aContext.
+	"contextInspector initialize"
+	"| oldSelection newSelectionIndex   |
 	
 	oldSelection := contextInspector list selectedItem.
 	
@@ -12,3 +15,4 @@ updateContextInspectorFromContext: aContext
 			[ :item :index | item label = oldSelection label ifTrue: [ newSelectionIndex := index ] ].
 	].
 	contextInspector list setSelectedIndex: newSelectionIndex.
+"

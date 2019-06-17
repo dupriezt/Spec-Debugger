@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "StInspection",
+	"category" : "Spec-Debugger-Debugger-Spec2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"contextInspector",
+		"inspector"
+	],
+	"name" : "StDebuggerInspector",
+	"type" : "normal"
+}

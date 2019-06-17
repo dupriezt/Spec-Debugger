@@ -1,10 +1,10 @@
 initialization
 setFocusOrder
 
-	self focusOrder 
+	"self focusOrder 
 		removeAll;
 		add: stack;
 		add: toolbar;
 		add: code;
 		add: receiverInspector;
-		add: contextInspector
+		add: contextInspector"
