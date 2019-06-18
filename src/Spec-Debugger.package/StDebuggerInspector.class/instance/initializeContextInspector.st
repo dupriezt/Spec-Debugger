@@ -9,7 +9,6 @@ initializeContextInspector
 	contextInspector table
 		whenSelectionChangedDo: [ :item | 
 			[item inspect.
-			 inspector model
-				inspectedObject: (item ifNotNil: [item rawValue ]).
+			 inspector model: (item ifNotNil: [item rawValue ]).
 			self flag: 'TODO replace initialize with refresh (when it works...'.
 			inspector initialize ] ]

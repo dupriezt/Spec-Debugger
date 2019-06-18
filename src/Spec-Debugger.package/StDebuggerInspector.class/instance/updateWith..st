@@ -4,6 +4,7 @@ updateWith: inspectedObject
 	oldPath := contextInspector table selection selectedPath.
 	oldItem := contextInspector table selectedItem hostObject.
 	self model inspectedObject: inspectedObject.
+	contextInspector model: inspectedObject.
 	contextInspector setAttributeTable.
 	contextInspector table
 		selectPath:
