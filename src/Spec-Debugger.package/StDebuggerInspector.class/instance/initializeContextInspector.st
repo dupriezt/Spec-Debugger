@@ -1,10 +1,9 @@
 initialization
 initializeContextInspector
-	contextInspector := StContextInspection basicNew.
+	contextInspector := StDebuggerRawInspection basicNew.
 	contextInspector application: SpecNullApplication new.
 	contextInspector
 		setModelBeforeInitialization: self model inspectedObject.
-	contextInspector beForDebugger.
 	contextInspector initialize.
 	contextInspector table selectPath: #(1).
 	contextInspector table

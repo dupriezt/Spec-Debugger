@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "StRawInspection",
+	"category" : "Spec-Debugger-Debugger-Spec2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"forDebugger"
+	],
+	"name" : "StDebuggerRawInspection",
+	"type" : "normal"
+}
