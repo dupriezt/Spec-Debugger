@@ -4,9 +4,7 @@ updateWith: inspectedObject
 	oldPath := contextInspector table selection selectedPath.
 	oldItem := contextInspector table selectedItem hostObject.
 	self model inspectedObject: inspectedObject.
-	contextInspector table
-		roots: inspectedObject debuggerInspectorNodes;
-		children: [ :node | node children ].
+	contextInspector setAttributeTable.
 	contextInspector table
 		selectPath:
 			(inspectedObject == oldItem

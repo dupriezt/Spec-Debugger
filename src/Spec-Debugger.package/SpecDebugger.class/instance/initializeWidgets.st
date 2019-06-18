@@ -7,10 +7,12 @@ initializeWidgets
 	advancedToolbar debuggingActionsPragmas: {#advancedDebuggingAction}.
 	advancedToolbar buttonColor: self theme advancedActionButtonColor.
 	code := self newCode.
-	receiverInspector := self instantiate: InspectorNavigator.
+	receiverInspector := StDebuggerInspector
+		newApplication: SpecNullApplication new
+		model: (StInspectorModel on: nil).
 	contextInspector := StDebuggerInspector
 		newApplication: SpecNullApplication new
-		model: (StInspectorModel on: [] asContext).
+		model: (StInspectorModel on: [  ] asContext).
 	self code
 		acceptBlock: [ :text :notifyer | 
 			self

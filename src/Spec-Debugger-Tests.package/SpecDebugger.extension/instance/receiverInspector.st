@@ -1,4 +1,4 @@
-accessing widgets
+*Spec-Debugger-Tests
 receiverInspector
 
 	^ receiverInspector

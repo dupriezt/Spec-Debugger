@@ -1,3 +1,0 @@
-updating
-updateContextInspectorFromContext: aContext
-	contextInspector updateWith: aContext
