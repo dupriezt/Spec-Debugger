@@ -8,7 +8,6 @@ initializeWidgets
 	advancedToolbar buttonColor: self theme advancedActionButtonColor.
 	code := self newCode.
 	receiverInspector := self instantiate: InspectorNavigator.
-	"contextInspector := self instantiate: EyeDebuggerContextInspector."
 	contextInspector := StDebuggerInspector
 		newApplication: SpecNullApplication new
 		model: (StInspectorModel on: [] asContext).
