@@ -6,4 +6,5 @@ updateStackFromSession: aSession
 		items:
 			(aSession
 				ifNil: [ OrderedCollection new ]
-				ifNotNil: [ :s | s shortStack ])
+				ifNotNil: [ :s | s shortStack ]).
+	stackTable selectIndex: 1

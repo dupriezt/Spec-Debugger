@@ -3,5 +3,4 @@ updateContextChanged
 	| selection |
 	selection := self stack selectedItem.
 	self updateStep.
-	self stack setSelectedItem: selection.
-	
+	self stack setSelectedItem: selection
