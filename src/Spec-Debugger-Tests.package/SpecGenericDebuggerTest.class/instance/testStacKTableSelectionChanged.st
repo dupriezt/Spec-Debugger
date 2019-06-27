@@ -1,5 +1,9 @@
 tests - stack table
 testStackTableSelectionChanged
-	self debugger session: session.
-	self assert: false.
-	self flag: 'Code, receiver and context inspector muste be updated. Stack must not be expanded if we''re not on the last shown element'
+	|dbg|
+	dbg := self debugger.
+	dbg session: session.
+	self clickStepInto: 2.
+	dbg stackTable selectItem: dbg stackTable items second.
+	self assert: dbg contextInspector inspectedObject == dbg stackTable selectedItem.
+	self assert: dbg receiverInspector inspectedObject == dbg stackTable selectedItem receiver.
