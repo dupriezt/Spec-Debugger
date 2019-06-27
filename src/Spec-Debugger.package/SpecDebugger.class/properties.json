@@ -22,7 +22,6 @@
 		"toolbar",
 		"contextInspector",
 		"receiverInspector",
-		"browsedEnvironment",
 		"scriptingPane",
 		"recordSteps",
 		"showScriptingPane",

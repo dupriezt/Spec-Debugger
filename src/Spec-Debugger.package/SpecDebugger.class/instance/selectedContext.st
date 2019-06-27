@@ -1,4 +1,4 @@
 accessing context
 selectedContext	
 
-	^ self stack selectedItem
+	^ self stackTable selectedItem

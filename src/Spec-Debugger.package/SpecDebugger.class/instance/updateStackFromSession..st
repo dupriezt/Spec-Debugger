@@ -1,6 +1,6 @@
 stack
 updateStackFromSession: aSession
-	self stack session: aSession.
+
 	self flag: 'Remove nil test'.
 	stackTable
 		items:

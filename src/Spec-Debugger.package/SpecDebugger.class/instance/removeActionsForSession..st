@@ -1,6 +1,6 @@
-initialization
+session
 removeActionsForSession: aSession
-
+self flag: 'Kill it'.
 	aSession ifNotNil: [ 
 		aSession  
 			removeActionsForEvent: #restart;

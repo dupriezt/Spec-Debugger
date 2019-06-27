@@ -5,7 +5,6 @@ defaultSpec
 		position: 70 percent;
 		add:
 			(SpecBoxLayout newVertical
-				add: #stack;
 				add: #stackTable;
 				add: #toolbar
 					withConstraints: [ :constraint | constraint height: self toolbarHeight ];

@@ -1,5 +1,6 @@
-initialization
+session
 registerActionsForSession: aSession
+	self flag: 'Kill it'.
 
 	aSession ifNotNil: [
 		aSession
