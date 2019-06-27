@@ -1,13 +1,17 @@
 tests - context inspector
-testContextChangedAfterStepOver 
+testContextChangedAfterStepOver
 	| dbg |
 	dbg := self debugger.
 	dbg session: session.
-	dbg contextInspector mainList selectItem: dbg contextInspector mainList items last.
 	
-	self assert: dbg contextInspector mainList size = 3.
-	self assert: dbg contextInspector inspector object isNil.
-	
-	self clickStepOver: 3.
-	self assert: dbg contextInspector inspector object equals: 1.
-	self assert: dbg contextInspector mainList size = 4.
+	"We add 2 to the num temps in the context inspector, 
+	for the thisContext and the stackTop nodes"
+	self clickStepInto: 2.	
+	self
+		assert: dbg contextInspector inspectorTable roots size
+		equals: dbg contextInspector inspectedObject tempNames size + 2.
+		
+	self clickStepOver: 3.	
+	self
+		assert: dbg contextInspector inspectorTable roots size
+		equals: dbg contextInspector inspectedObject tempNames size + 2
