@@ -1,6 +1,6 @@
 tests - context inspector
 testContextUnchangedAfterStepOver
-		| dbg currentContext |
+	| dbg currentContext |
 	dbg := self debugger.
 	dbg session: session.	
 	

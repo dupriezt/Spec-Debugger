@@ -1,3 +1,9 @@
 tests - receiver inspector
 testReceiverList
-	self assert: false
+	| dbg currentReceiver |
+	dbg := self debugger.
+	dbg session: session.	
+	
+	self clickStepInto: 2. "getting into Number>>squared"
+	currentReceiver := dbg receiverInspector inspectedObject.	
+	self assert: currentReceiver equals: 1
