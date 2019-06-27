@@ -5,14 +5,13 @@ testStackTableAfterReturn
 	dbg session: session.
 	
 	"we dive into a method"
-	self clickStepInto.
-	self clickStepInto.
+	self clickStepInto: 2.
+
 	
 	stackSizeAfterStepIn := dbg stackTable items size.
 	
 	"we return from it"
-	self clickStepOver.
-	self clickStepOver.
+	self clickStepOver: 2.
 	
 	stackTableItems := dbg stackTable items.
 	self assert: dbg stackTable selectedIndex equals: 1.

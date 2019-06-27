@@ -7,3 +7,4 @@ testStackTableSelectionChanged
 	dbg stackTable selectItem: dbg stackTable items second.
 	self assert: dbg contextInspector inspectedObject == dbg stackTable selectedItem.
 	self assert: dbg receiverInspector inspectedObject == dbg stackTable selectedItem receiver.
+	self assert: dbg code text equals: dbg stackTable items second sourceCode
