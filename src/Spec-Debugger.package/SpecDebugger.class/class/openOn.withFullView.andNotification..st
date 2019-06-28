@@ -1,10 +1,8 @@
 opening
 openOn: aDebugSession withFullView: aBool andNotification: aString
-	
 	| debugger |
 	debugger := self on: aDebugSession.
-	
-	false
+	AlwaysOpenFullDebugger
 		ifTrue: [ debugger openWithFullView ]
-		ifFalse: [ debugger openWithNotification: aString].
-	^ debugger.
+		ifFalse: [ debugger openWithNotification: aString ].
+	^ debugger

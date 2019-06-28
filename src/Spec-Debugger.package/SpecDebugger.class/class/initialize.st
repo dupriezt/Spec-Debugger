@@ -9,4 +9,3 @@ initialize
 	"Add ourselves to registry. See [Smalltalk tools]" 
 	Smalltalk tools registerDebugger: self withRank: 80.
 	
-	StepSequence := LinkedList new.

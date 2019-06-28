@@ -17,6 +17,3 @@ initialize
 	labelHolder whenChangedDo: [ 
 		self updateTitle ].
 	
-	recordSteps := false.
-	showScriptingPane := self class showScriptingPane.
-	showAdvancedToolbar := self class showAdvancedDebuggingToolbar 

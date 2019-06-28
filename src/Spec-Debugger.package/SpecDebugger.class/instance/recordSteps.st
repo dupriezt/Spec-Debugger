@@ -1,3 +1,0 @@
-initialization
-recordSteps
-	^ recordSteps 

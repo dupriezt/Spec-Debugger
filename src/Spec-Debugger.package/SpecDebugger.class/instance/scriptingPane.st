@@ -1,3 +1,0 @@
-accessing widgets
-scriptingPane
-	^ scriptingPane

@@ -22,11 +22,6 @@
 		"toolbar",
 		"contextInspector",
 		"receiverInspector",
-		"scriptingPane",
-		"recordSteps",
-		"showScriptingPane",
-		"showAdvancedToolbar",
-		"advancedToolbar",
 		"terminateDebugSessionWhenClearing",
 		"stackTable"
 	],

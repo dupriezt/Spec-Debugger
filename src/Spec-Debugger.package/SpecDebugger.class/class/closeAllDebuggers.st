@@ -1,5 +1,6 @@
 utilities
 closeAllDebuggers
+	self flag: 'This code is Morphic related!'.
 	"SpecDebugger closeAllDebuggers"
 	(MorphicWindowAdapter allInstances select: [:w | 
 		(w model isKindOf: WindowModel) and: [ 

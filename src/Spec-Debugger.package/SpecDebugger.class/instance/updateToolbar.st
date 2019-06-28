@@ -1,5 +1,3 @@
 updating widgets
 updateToolbar
-	
-	self toolbar update.
-	self advancedToolbar update
+	self toolbar update
